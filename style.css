@@ -1,0 +1,49 @@
+*,
+*:before,
+p:after {
+  box-sizing: border-box;
+}
+
+html {
+  font-family: "Prompt", sans-serif;
+  font-size: 18px;
+  _text-align: center;
+}
+
+body {
+  line-height: 1.5;
+  --background-color: #ffefd5;
+  --dark-background: #191970;
+  --dark-border: #ffffe0;
+  background-color: var(--background-color);
+  transition: 0.5s ease-in-out;
+}
+
+main {
+  display: flex;
+  justify-content: center;
+}
+
+button {
+  position: absolute;
+  top: 50%;
+  font-size: 2rem;
+  border-radius: 0.2em;
+  border-width: 0.4rem;
+  padding: 1rem;
+  margin: 0.5rem;
+  background-color: var(--background-color);
+
+  _margin: auto;
+}
+
+.body--dark {
+  background-color: var(--dark-background);
+}
+
+.button--dark {
+  color: var(--dark-border);
+  border-color: var(--dark-border);
+  background-color: var(--dark-background);
+  box-shadow: 0 0 1em var(--dark-border);
+}
